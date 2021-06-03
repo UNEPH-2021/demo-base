@@ -7,3 +7,5 @@
 - Slides des cours :
   - https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03
   - https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF13
+
+coucou
