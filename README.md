@@ -22,4 +22,10 @@ A retenir :
 
 **24/06/2021**
 
-URL du cours : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_0_JS.pdf
+URL des cours :
+- JavaScript : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_0_JS.pdf
+- AJAX : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_1_AJAX.pdf
+
+### /!\ Pour la prochaine fois
+
+Télécharger et installer NodeJS : https://nodejs.org/en/
