@@ -2,6 +2,8 @@
 
 ## Notes de cours
 
+**03/60/2021**
+
 - A télécharger :
   - http://git-scm.com/downloads
   - https://www.postman.com/
@@ -17,3 +19,7 @@ A retenir :
 - REST
 - Web API
   - Documentation : OpenAPI, Swagger
+
+**24/06/2021**
+
+URL du cours : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_0_JS.pdf
