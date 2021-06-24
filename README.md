@@ -29,3 +29,22 @@ URL des cours :
 ### /!\ Pour la prochaine fois
 
 Télécharger et installer NodeJS : https://nodejs.org/en/
+
+**28/06/2021**
+
+- Programmation côté serveur
+  - Node JS
+  - Event Loop
+  - Express
+
+**01/07/2021**
+
+- Programmation côté client
+  - JS
+  - Single-Page Application
+
+**05/07/2021**
+
+- Web mobile
+  - responsive (Bootstrap, Foundation, Material...)
+  - Device API (GPS, battery, vibration)
