@@ -53,6 +53,7 @@ URL des cours :
 		</p>		
 	</form>
 </body>
+</html>
 ```
 
 - Programmation côté serveur
