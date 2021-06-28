@@ -89,7 +89,7 @@ app.listen(port, () => {
 })
 ```
 
-### Choses à faire pour utiliser le moteur de templates EJS
+### Pour utiliser le moteur de templates EJS
 
 - Installer EJS avec NPM : `npm i ejs`
 - Indiquer à Express qu'il faut qu'il utilise EJS comme moteur de templating : dans le fichier `index.js`, rajouter une ligne `app.set('view engine', 'ejs');`
