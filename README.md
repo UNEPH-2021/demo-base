@@ -95,7 +95,18 @@ app.listen(port, () => {
 - Indiquer à Express qu'il faut qu'il utilise EJS comme moteur de templating : dans le fichier `index.js`, rajouter une ligne `app.set('view engine', 'ejs');`
 - Créer un dossier `views` dans le dossier du projet
 - Créer une page HTML simple avec une extension `.ejs`
-- Dans l'une des fonctions de réponse à une requête, remplacer `send(...)` par `render('nom_du_fichier_sans_extension')`
+  - Mettre les instructions de templating décrites dans la doc : https://www.npmjs.com/package/ejs
+- Dans l'une des fonctions de réponse à une requête, remplacer `send(...)` par :
+  - si pas de données à templater : `render('nom_du_fichier_sans_extension')`
+  - si on veut passer des données : `render('nom_du_fichier_sans_extension', {objet_json_contenant_les_donnees})`
+
+### /!\ Pour la prochaine fois
+
+Modifier l'application pour qu'elle gère une liste d'utilisateurs
+
+- Quand on fait un POST, on ajoute un utilisateur à un tableau de valeur
+- Faire une autre page qui permet d'avoir la liste des utilisateurs complète.
+
 
 **01/07/2021**
 
