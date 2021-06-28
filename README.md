@@ -42,10 +42,11 @@ URL des cours :
 <html>
 <head>
 	<title>Premiere page Web</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
 </head>
 <body>
 	<h1>La page qui dit bonjour</h1>
-	<form action="./disbonjour" method="POST">
+	<form action="/disbonjour" method="POST">
 		<p>
 			Entrez votre prenom :
 			<input type="text" name="prenom">
