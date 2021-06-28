@@ -32,6 +32,10 @@ Télécharger et installer NodeJS : https://nodejs.org/en/
 
 **28/06/2021**
 
+URL des cours :
+- NodeJS : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF13/revealJS/#cm1-stackjs
+
+
 - Programmation côté serveur
   - Node JS
   - Event Loop
