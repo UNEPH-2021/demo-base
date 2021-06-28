@@ -32,6 +32,11 @@ Télécharger et installer NodeJS : https://nodejs.org/en/
 
 **28/06/2021**
 
+- Programmation côté serveur
+  - Node JS
+  - Event Loop
+  - Express
+
 URL des cours :
 - NodeJS : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF13/revealJS/#cm1-stackjs
 
@@ -84,10 +89,13 @@ app.listen(port, () => {
 })
 ```
 
-- Programmation côté serveur
-  - Node JS
-  - Event Loop
-  - Express
+### Choses à faire pour utiliser le moteur de templates EJS
+
+- Installer EJS avec NPM : `npm i ejs`
+- Indiquer à Express qu'il faut qu'il utilise EJS comme moteur de templating : dans le fichier `index.js`, rajouter une ligne `app.set('view engine', 'ejs');`
+- Créer un dossier `views` dans le dossier du projet
+- Créer une page HTML simple avec une extension `.ejs`
+- Dans l'une des fonctions de réponse à une requête, remplacer `send(...)` par `render('nom_du_fichier_sans_extension')`
 
 **01/07/2021**
 
