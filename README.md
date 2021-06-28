@@ -35,6 +35,25 @@ Télécharger et installer NodeJS : https://nodejs.org/en/
 URL des cours :
 - NodeJS : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF13/revealJS/#cm1-stackjs
 
+### Code de la page HTML
+
+```html
+<!doctype html>
+<html>
+<head>
+	<title>Premiere page Web</title>
+</head>
+<body>
+	<h1>La page qui dit bonjour</h1>
+	<form action="./disbonjour" method="POST">
+		<p>
+			Entrez votre prenom :
+			<input type="text" name="prenom">
+			<input type="submit" value="Envoyer">
+		</p>		
+	</form>
+</body>
+```
 
 - Programmation côté serveur
   - Node JS
