@@ -57,6 +57,33 @@ URL des cours :
 </html>
 ```
 
+### Code du fichier index.js du serveur Express
+
+```javascript
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.use('/static', express.static('public'))
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.get('/coucou', (req, res) => {
+  res.send('Coucou World!')
+})
+
+app.post('/disbonjour', (req, res) => {
+  res.send('Bonjour ' + req.body['prenom'] + ' !!!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
+```
+
 - Programmation côté serveur
   - Node JS
   - Event Loop
