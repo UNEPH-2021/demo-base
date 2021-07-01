@@ -1,0 +1,21 @@
+{
+  "name": "node-test2",
+  "version": "1.0.0",
+  "description": "Premier projet Node avec NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo test",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "uneph",
+    "node",
+    "npm"
+  ],
+  "author": "Lionel Médini",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
