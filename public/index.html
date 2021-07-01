@@ -11,60 +11,33 @@
 
 <body>
 	<h1>La page qui dit bonjour</h1>
+
+	<div>
+		<p><strong>Menu</strong></p>
+		<ul>
+			<li><a href='#index'>Accueil</a></li>
+			<li><a href='#bonjour-view'>Vue 1 utilisateur</a></li>
+			<li><a href='#users-view'>Liste des utilisateurs</a></li>
+		</ul>
+	</div>
+	<hr>
+
 	<section id="index" class="active">
 		<h2>Accueil</h2>
-
-		<div>
-			<p><strong>Menu</strong></p>
-			<ul>
-				<li><a href='#bonjour-view'>Vue 1</a></li>
-				<li><a href='#users-view'>Vue 2</a></li>
-			</ul>
-		</div>
-		<hr>
-
-		<form action="/disbonjour" method="POST">
 			<p>
 				Entrez votre prenom :
-				<input type="text" name="prenom">
-				<input type="submit" value="Envoyer">
+				<input type="text" id="prenom">
+				<button onclick="appelleDisBonjour()">Envoyer</button>
 			</p>
-		</form>
 	</section>
 
 	<section id="bonjour-view" class="inactive">
-		<h2>Bonjour ...</h2>
-
-		<div>
-			<p><strong>Menu</strong></p>
-			<ul>
-				<li><a href='#index'>Accueil</a></li>
-				<li><a href='#users-view'>Vue 2</a></li>
-			</ul>
-		</div>
-		<hr>
-
+		<h2 id="prenom-placeholder" class="bonjour-class">Bonjour ...</h2>
 	</section>
 
 	<section id="users-view" class="inactive">
 		<h2>Liste des utilisateurs</h2>
-
-		<div>
-			<p><strong>Menu</strong></p>
-			<ul>
-				<li><a href='#index'>Accueil</a></li>
-				<li><a href='#bonjour-view'>Vue 1</a></li>
-			</ul>
-		</div>
-		<hr>
-
+		<p>TODO...</p>
 	</section>
 </body>
-<script>
-	fetch('/disbonjour-json', { method: "POST" }).then(res => res.json()).then(json => {
-		document.body.innerHTML += "<p id='messageInitial'>" + json.message + "</p>";
-		document.getElementById('messageInitial').style.color = "red";
-	});
-</script>
-
 </html>
