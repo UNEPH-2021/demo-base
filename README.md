@@ -111,8 +111,8 @@ Modifier l'application pour qu'elle gère une liste d'utilisateurs
 **01/07/2021**
 
 - Programmation côté client
-  - JS
-  - Single-Page Application
+  - JS : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_0_JS.pdf (promesses)
+  - Single-Page Application : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_1_AJAX.pdf (Fetch, SPA)
 
 **05/07/2021**
 
