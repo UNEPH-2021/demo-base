@@ -1,17 +1,70 @@
 <!doctype html>
 <html>
+
 <head>
 	<title>Premiere page Web</title>
 	<link rel="stylesheet" type="text/css" href="test.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="client.js"></script>
 </head>
+
 <body>
 	<h1>La page qui dit bonjour</h1>
-	<form action="/disbonjour" method="POST">
-		<p>
-			Entrez votre prenom :
-			<input type="text" name="prenom">
-			<input type="submit" value="Envoyer">
-		</p>		
-	</form>
+	<section id="index" class="active">
+		<h2>Accueil</h2>
+
+		<div>
+			<p><strong>Menu</strong></p>
+			<ul>
+				<li><a href='#bonjour-view'>Vue 1</a></li>
+				<li><a href='#users-view'>Vue 2</a></li>
+			</ul>
+		</div>
+		<hr>
+
+		<form action="/disbonjour" method="POST">
+			<p>
+				Entrez votre prenom :
+				<input type="text" name="prenom">
+				<input type="submit" value="Envoyer">
+			</p>
+		</form>
+	</section>
+
+	<section id="bonjour-view" class="inactive">
+		<h2>Bonjour ...</h2>
+
+		<div>
+			<p><strong>Menu</strong></p>
+			<ul>
+				<li><a href='#index'>Accueil</a></li>
+				<li><a href='#users-view'>Vue 2</a></li>
+			</ul>
+		</div>
+		<hr>
+
+	</section>
+
+	<section id="users-view" class="inactive">
+		<h2>Liste des utilisateurs</h2>
+
+		<div>
+			<p><strong>Menu</strong></p>
+			<ul>
+				<li><a href='#index'>Accueil</a></li>
+				<li><a href='#bonjour-view'>Vue 1</a></li>
+			</ul>
+		</div>
+		<hr>
+
+	</section>
 </body>
+<script>
+	fetch('/disbonjour-json', { method: "POST" }).then(res => res.json()).then(json => {
+		document.body.innerHTML += "<p id='messageInitial'>" + json.message + "</p>";
+		document.getElementById('messageInitial').style.color = "red";
+	});
+</script>
+
 </html>

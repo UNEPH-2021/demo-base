@@ -1,4 +1,12 @@
 body {
-color: white;
-background-color: black;
+    color: white;
+    background-color: black;
+}
+
+.active {
+    display: block;
+}
+
+.inactive {
+    display: none;
 }

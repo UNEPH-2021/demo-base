@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head>
+	<title>Deuxième page Web</title>
+	<link rel="stylesheet" type="text/css" href="/static/test.css">
+</head>
+<body>
+	<h1>Bonjour à tous !</h1>
+	<ul>
+		<% personnes.forEach((prenom) => { %>
+		<li><%= prenom %></li>
+		<% }); %>
+	</ul>
+</body>
+</html>
