@@ -114,6 +114,16 @@ Modifier l'application pour qu'elle gère une liste d'utilisateurs
   - JS : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_0_JS.pdf (promesses)
   - Single-Page Application : https://perso.liris.cnrs.fr/lionel.medini/enseignement/M1IF03/CM/4_1_AJAX.pdf (Fetch, SPA)
 
+### /!\ Pour la prochaine fois
+
+Faire en sorte d'afficher la liste des utilisateurs dans la vue `users-view` :
+
+- côté serveur : ajouter l'utilisateur au tableau `personnes` quand on l'appelle en JSON
+- côté serveur : rajouter une route pour pourvoir requêter le tabelau `personnes` en JSON
+- côté client : toutes les 5 secondes, faire une requête asynchrone au serveur pour récupérer la liste des utilisateurs, et l'ajouter à la vue `users-view`
+- Ajouter Bootstrap à votre application et utiliser le thème "Cover" : https://getbootstrap.com/docs/5.0/examples/cover/#
+
+
 **05/07/2021**
 
 - Web mobile
