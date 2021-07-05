@@ -129,3 +129,9 @@ Faire en sorte d'afficher la liste des utilisateurs dans la vue `users-view` :
 - Web mobile
   - responsive (Bootstrap, Foundation, Material...)
   - Device API (GPS, battery, vibration)
+
+### Exemples de code
+
+- Vibration : https://www.w3.org/TR/vibration/#idl-def-vibratepattern
+- Device Orientation : https://developer.mozilla.org/en-US/docs/Web/Events/Detecting_device_orientation
+
