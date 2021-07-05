@@ -29,8 +29,8 @@ app.post('/disbonjour', (req, res) => {
   res.render('resultat3', {personnes : personnes});
 })
 
-
 app.post('/disbonjour-json', (req, res) => {
+  personnes.push(req.body.prenom);
   res.type('application/json')
   res.send('{"message": "Bonjour ' + req.body.prenom + ' !!!"}')
 })
@@ -39,6 +39,12 @@ app.get('/disbonjour', (req, res) => {
   res.send('Bonjour ' + req.query.prenom + ' !!!')
 })
 
+app.get('/users', (req, res) => {
+  res.type('application/json')
+  res.send(personnes)
+})
+
+//
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })

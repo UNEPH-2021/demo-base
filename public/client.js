@@ -31,3 +31,17 @@ function appelleDisBonjour() {
         window.location.hash = "#bonjour-view";
     });
 }
+
+function obtenirUser() {
+    fetch('/users', {
+        method: "GET",
+        headers: {
+            "Accept":"application/json"
+        }
+    }
+    ).then(res => res.json()
+    ).then(json => {
+        document.getElementById("userlist").innerHTML = json.personnes;
+       // window.location.hash = "#bonjour-view";
+    });
+}
