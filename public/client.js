@@ -31,6 +31,7 @@ function appelleDisBonjour() {
         window.location.hash = "#bonjour-view";
     });
 }
+let nbUsers = 0;
 
 function obtenirUser() {
     fetch('/users', {
@@ -47,6 +48,18 @@ function obtenirUser() {
             htmlResult += "<li>" + element + "</li>";
         });
         document.getElementById("userlist").innerHTML = htmlResult;
-       // window.location.hash = "#bonjour-view";
+       
+        if(json.personnes.length != nbUsers) {
+            nbUsers = json.personnes.length;
+            vibrate();
+        }
     });
+}
+
+/********************/
+// DEVICE APIs
+/********************/
+
+function vibrate() {
+    navigator.vibrate([500, 300, 200]);
 }
