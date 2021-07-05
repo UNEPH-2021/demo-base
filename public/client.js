@@ -41,7 +41,12 @@ function obtenirUser() {
     }
     ).then(res => res.json()
     ).then(json => {
-        document.getElementById("userlist").innerHTML = json.personnes;
+        let htmlResult = "";
+        
+        json.personnes.forEach(element => {
+            htmlResult += "<li>" + element + "</li>";
+        });
+        document.getElementById("userlist").innerHTML = htmlResult;
        // window.location.hash = "#bonjour-view";
     });
 }

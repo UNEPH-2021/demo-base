@@ -41,7 +41,7 @@ app.get('/disbonjour', (req, res) => {
 
 app.get('/users', (req, res) => {
   res.type('application/json')
-  res.send(personnes)
+  res.send('{"personnes":' + JSON.stringify(personnes) + '}')
 })
 
 //
