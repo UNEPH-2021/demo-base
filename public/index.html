@@ -50,7 +50,7 @@
 		<pre class="output"></pre>
 	</section>
 
-	<section id="motion-view">
+	<section id="motion-view" class="inactive">
 		<div class="main">
 			<h2>Device Motion</h2>
 			<table>
@@ -79,6 +79,16 @@
 	</section>
 </body>
 <script>
-	setInterval(obtenirUser, 5000);
+setInterval(obtenirUser, 5000);
+
+if(window.DeviceOrientationEvent) {
+        console.log("DeviceOrientation supported");
+    } else {
+        console.log("DeviceOrientation NOT supported");
+    }
+
+window.addEventListener('deviceorientation', handleOrientation, true);
+window.addEventListener('devicemotion', deviceMotionHandler, true);
+
 </script>
 </html>
